@@ -1,6 +1,0 @@
-//setingan untuk vs code
-{
-    "window.zoomLevel": -1,
-    "editor.fontSize": 0,
-    "editor.wordWrap": "on" //flexible
-}
