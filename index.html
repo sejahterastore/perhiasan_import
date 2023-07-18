@@ -24,7 +24,67 @@
     /></noscript>
     <!-- End Meta Pixel Code -->
 
-    <link rel="stylesheet" href="/style/style.css">
+    <style>
+        .responsive{
+    display: flex;
+    text-align: center;
+    width: 100%;
+    height: auto;
+
+   } 
+   .panah{
+    background: linear-gradient(0deg, rgba(254, 254, 254, 0.20) 99.99%, rgba(228, 213, 213, 0.00) 100%), #F2EAEA;
+   }
+
+   #scroll-btn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: red;
+        color: white;
+        cursor: pointer;
+        padding: 15px 19px;
+        border-radius: 100px;
+    }
+    
+    #scroll-btn:hover {
+        background-color: #555;
+    }
+    
+    .sampel {
+        min-height: 2000px;
+    }
+
+    @keyframes slidy {
+        0% { left: 0%; }
+        20% { left: 0%; }
+        25% { left: -100%; }
+        45% { left: -100%; }
+        50% { left: -200%; }
+        70% { left: -200%; }
+        75% { left: -300%; }
+        95% { left: -300%; }
+        100% { left: -400%; }
+    }
+
+    body { margin: 1; } 
+    div#slider { overflow: hidden; }
+    div#slider figure img { width: 20%; float: left; }
+    div#slider figure { 
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 30s slidy infinite; 
+    }
+    </style>
 </head>
 <body>
         <img src="/images/lp-1.png" alt="lp1" class="responsive">
